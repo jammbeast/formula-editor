@@ -1,36 +1,39 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Редактор и Анализатор Математических Формул
 
-## Getting Started
+**Описание проекта:**
 
-First, run the development server:
+Проект представляет собой веб-интерфейс для редактирования и анализа математических формул с использованием формата LaTeX. Приложение позволяет создавать, редактировать и анализировать формулы, поддерживая стандартные математические элементы и обеспечивая расширяемость функционала.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Функционал
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Редактор формул
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- **Рабочая область для создания формул.**
+- **Возможность вставки формул в текст и записи формул как отдельных объектов.**
+- **Поддержка стандартных математических элементов:**
+  - Дроби
+  - Корни
+  - Интегралы
+  - Логарифмы
+  - Возведение в степень
+  - И другие
+- **Расширяемость библиотеки блоков для добавления новых математических элементов.**
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Анализатор формул
 
-## Learn More
+- **Рабочая область для ввода или импортирования формул для анализа.**
+- **Архитектурная возможность расширения поддерживаемых конструкций LaTeX.**
+- **Обработка формул для обеспечения их сопоставления и сравнения.**
+- **Отображение процента совпадений и выделение совпадающих частей формул.**
 
-To learn more about Next.js, take a look at the following resources:
+### Обработка формул
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Преобразование формул в строковый формат LaTeX для хранения и передачи в формате JSON.**
+- **Обратное преобразование из строки LaTeX в визуальное представление в редакторе.**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Установка
 
-## Deploy on Vercel
+1. **Клонируйте репозиторий:**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+   ```bash
+   git clone https://github.com/jammbeast/formula-editor.git
